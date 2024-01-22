@@ -1,0 +1,19 @@
+<!-- signup-form.component.html -->
+<div class="container">
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" formControlName="username" />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" formControlName="password" />
+      </div>
+      <!-- Add other form fields as needed -->
+    
+      <button type="submit" [disabled]="!signupForm.valid">Signup</button>
+    </form>
+    
+  </div>
+  
+  

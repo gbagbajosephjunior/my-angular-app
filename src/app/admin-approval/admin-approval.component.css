@@ -1,0 +1,100 @@
+/* Default styles for all screen sizes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pending-users {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.approve-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Responsive styles for different screen sizes */
+@media (min-width: 320px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .approve-button {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 480px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .approve-button {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .approve-button {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .approve-button {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .approve-button {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .approve-button {
+    font-size: 22px;
+  }
+}

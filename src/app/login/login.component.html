@@ -1,0 +1,15 @@
+<div class="login-container">
+  <h2>Login</h2>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" formControlName="username" />
+    </div>
+    <div class="label">
+      <label for="tempKey">Temporary Key:</label>
+      <input type="password" id="tempKey" formControlName="tempKey" />
+    </div>
+    <button type="submit" [disabled]="!loginForm.valid">Login</button>
+  </form>
+</div>
+

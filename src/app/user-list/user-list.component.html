@@ -1,0 +1,31 @@
+
+
+<div class="card-container">
+  <div *ngIf="users && users.length > 0" class="card">
+    <h2>User List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Username</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.username }}</td>
+          <td>{{ user.status }}</td>
+          <td>
+            <button (click)="editUser(user)">Edit</button>
+            <!-- <button (click)="removeUser(user)">Remove</button> -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="users && users.length === 0" class="card">
+    <p>No users available.</p>
+  </div>
+</div>

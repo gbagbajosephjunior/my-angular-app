@@ -1,0 +1,25 @@
+<!-- admin-approval.component.html -->
+<div class="container">
+  <div *ngIf="pendingUsers && pendingUsers.length > 0" class="pending-users">
+    <h2>Pending Users for Approval</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of pendingUsers">
+          <td>{{ user.username }}</td>
+          <td>
+            <button class="approve-button" (click)="approveUser(user.id)">Approve</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="pendingUsers && pendingUsers.length === 0" class="no-pending-message">
+    <p>No pending users for approval.</p>
+  </div>
+</div>

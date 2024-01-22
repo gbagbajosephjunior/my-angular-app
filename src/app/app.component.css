@@ -1,0 +1,69 @@
+/* app.component.css */
+
+/* Style the container */
+div {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.blue{
+  background-color: rgb(202, 207, 202);
+}
+/* Style the heading */
+h1 {
+  color: #333;
+}
+/* Style the navigation links */
+nav {
+  margin-top: 20px;
+}
+
+a {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 1200px) {
+  div {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  div {
+    max-width: 600px;
+  }
+
+  a {
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div {
+    max-width: 400px;
+  }
+
+  a {
+    padding: 6px 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  div {
+    max-width: 300px;
+  }
+}
